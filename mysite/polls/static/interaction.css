@@ -1,0 +1,107 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    width:100%;
+    height:100%;
+}
+.sidescreen{
+    position:fixed;
+    right:0;
+    bottom:0;
+    height:40%;
+    width:100%;
+    border:2px solid black;
+    background-color:white;
+}
+.maincontainer{
+    z-index:1;
+    background: #333;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: bottom 0.5s ease;
+    -moz-transition: bottom 0.5s ease;
+    transition: bottom 0.5s ease;
+    overflow-x: auto;
+    overflow: hidden;
+}
+.open{
+    bottom:40%;
+}
+.icon{
+    z-index:2;
+    position:absolute;
+    color:white;
+    font-size:50px;
+    left:50%;
+    bottom:0;
+    padding-bottom:30px;
+    text-decoration: none;
+}
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-animation: snow linear infinite;
+          animation: snow linear infinite;
+}
+.snow.foreground {
+  background-image: url("snow-large.png");
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+.snow.foreground.layered {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+.snow.middleground {
+  background-image: url("middle-large.png");
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+.snow.middleground.layered {
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+.snow.background {
+  background-image: url("small-large.png");
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+.snow.background.layered {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+            transform: translate3d(15%, 100%, 0);
+  }
+}
+
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+            transform: translate3d(15%, 100%, 0);
+  }
+}
+

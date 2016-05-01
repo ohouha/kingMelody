@@ -1,0 +1,8 @@
+{
+  "name": "mysites",
+  "description": "forfun",
+  "image": "heroku/python",
+  "repository": "https://github.com/ohouha/kingMelody.git",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ]
+}

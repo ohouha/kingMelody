@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>homepage</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/homepage.css" />
+    <link href="/static/jquery-sakura.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--onload="addanimation()"-->
+    
+    <!--<div id="info">0</div>-->
+    <div id="draggable" data-bottom-top="display:none"
+             data-top-top="display:block" data-anchor-target="#slide-2">
+        <div id="drag">
+            <div id="dragPicture"></div>
+            <div class="dragUI" id="dragUI"></div>
+        </div>
+    </div>
+    <div id="top" onmouseover="showpicture1()" onmouseout="initial()"></div>
+    <div id="middle" onmouseover="showpicture2()" onmouseout="initial()"></div>
+    <div id="lookdown" onmouseover="showpicture3()" onmouseout="initial()"></div>
+    <div class="bird"></div>
+    <div class="bird2"></div>
+
+
+    <section id="slide-1" class="wrapper elem">
+
+        <div class="background" data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -100px;"
+             data-anchor-target="#slide-1">
+            <div class="maincontainer" data-100-top-center="opacity:1;"
+                 data-top-bottom="opacity:0" data-anchor-target="#slide-1">
+
+                <div class="snow foreground"></div>
+                <div class="snow foreground layered"></div>
+                <div class="snow middleground"></div>
+                <div class="snow middleground layered"></div>
+                <div class="snow background"></div>
+                <div class="snow background layered"></div>
+
+            </div>
+
+            <div class="content content1" id="girl" data-top="left:55%;top:30%;opacity:1" data-top-center="left:55%;top:-10%; opacity:1;"
+                 data-top-bottom="left:40%;top:20%;opacity:0;display:block" data--100-top-bottom="display:none" data-anchor-target="#slide-1">
+                <img id="original" class="picture3" src="/static/HomePage/Girl.png" />
+                <img id="up" class="picture3" src="/static/HomePage/Girl_Top R.png" />
+                <img id="mid" class="picture3" src="/static/HomePage/Girl_Middle R.png" />
+                <img id="down" class="picture3" src="/static/HomePage/Girl_Down R.png" />
+            </div>
+
+            <div class="content content2" id="king" data-top="opacity:1;left:15% "
+                 data-top-bottom="opacity:0; left:10%" data-anchor-target="#slide-1">
+                <img class="picture1" onclick="displaypicture()" src="/static/HomePage/King.png" />
+                <img class="picture2"  src="/static/HomePage/King_Sing.png" />
+            </div>
+            <div class="clickUI" id="clickUI"></div>
+            <div class="musicNotes" id="musicNotes"></div>
+
+            <div class="content content3" id="title" data-top="opacity:1;top:20% "
+                 data-top-bottom="opacity:0; top:10%" data-anchor-target="#slide-1">
+            </div>
+            <div class="content content4" id="flower">
+            </div>
+            <div id="adding">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="slide-2" class="wrapper elem">
+
+        <!--king's part scene 01-->
+        <div class="background3" id="background3" data-bottom-top="bottom:-160%;"
+             data-top-top="bottom:0;" data-anchor-target="#slide-2">
+            <div class="crystal" ></div>
+            <div class="girlView" data--550-top-top="opacity:0" data--650-top-top="opacity:1" data--750-top-top="opacity:0" data-anchor-target="#slide-2"></div>
+            <div class="king1" data-bottom-top="opacity:0" data--100-top-top="opacity:1" data--200-top-top="opacity:0" data-anchor-target="#slide-2"></div>
+            <div class="king2" data--200-top-top="opacity:0" data--300-top-top="opacity:1" data--400-top-top="opacity:0" data-anchor-target="#slide-2"></div> 
+            <div class="king3" data-bottom-top="opacity:0" data--400-top-top="opacity:0" data--450-top-top="opacity:1" data--500-top-top="opacity:0" data-anchor-target="#slide-2"></div>
+            <div class="king4" data-bottom-top="opacity:0" data--450-top-top="opacity:0" data--550-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="flower" data--100-top-top="opacity:0;top:-60% " data--200-top-top="opacity:1" data--550-top-top="top:50%"  data-anchor-target="#slide-2"></div>
+            <div class="NextOne" data--650-top-top="opacity:0" data--750-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="sence02" data--900-top-top="opacity:0" data--950-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="fire" data--950-top-top="opacity:0" data--1000-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="sence03"  data--1200-top-top="opacity:0" data--1300-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="screen"  data--1600-top-top="opacity:0" data--1800-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="crystalBall2" data--2800-top-top="display:none;opacity:0" data--2900-top-top="display:block" data--3000-top-top="display:block;opacity:1"  data-anchor-target="#slide-2"></div>
+            <div class="sence032" data--1200-top-top="opacity:0" data--1300-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+           
+            <div class="king5" data--1800-top-top="left:10%;bottom:-10%" data--2000-top-top="left:30%;bottom:-30%"></div>
+            <div class="musicNote" ></div>
+            <div class="crystalBall" data--1800-top-top="opacity:0" data--2000-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="girl3" data--1900-top-top="opacity:0" data--2100-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="king6" id="king6" data--1300-top-top="opacity:0" data--1500-top-top="opacity:1"
+                 data--1800-top-top="left:10%;bottom:-10%" data--2000-top-top="left:30%;bottom:-30%" data-anchor-target="#slide-2"></div>
+            <div>
+            
+            <div class="kingScence06" data--2800-top-top="display:none;opacity:0" data--2900-top-top="display:block" data--3000-top-top="display:block;opacity:1"  data-anchor-target="#slide-2"></div>
+
+            </div>
+           
+            <div class="kingBar"></div>
+        </div>
+        
+
+        <div class="background2" id="background2" data-bottom-top="bottom:-160%;"
+             data-top-top="bottom:0;" data-anchor-target="#slide-2" >
+            <div class="layer1" data-bottom-top="opacity:0"
+                 data-top-top="opacity:1" data-anchor-target="#slide-2">
+            </div>
+            <div class="scene1girl" data-bottom-top="opacity:0"
+                 data-top-top="opacity:1" data--390-top-top="opacity:1" data--400-top-top="opacity:0" data-anchor-target="#slide-2"></div>
+            <div class="girl2"
+                 data--600-top-top="opacity:0" data--650-top-top="opacity:1" data--1100-top-top="opacity:1" data--1200-top-top="opacity:0" data-anchor-target="#slide-2">
+            </div>
+            <div class="layer2"
+                 data-top-top="opacity:0" data--200-top-top="opacity:1" data--300-top-top="opacity:0" data--400-top-top="opacity:1" data-anchor-target="#slide-2">
+            </div>
+            <div class="girlScene03"
+                 data--1200-top-top="opacity:0" data--1300-top-top="opacity:1" data--1800-top-top="opacity:0" data-anchor-target="#slide-2">
+            </div> 
+            <div class="girlScene04"  data--1800-top-top="opacity:0" data--2000-top-top="opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="musicNote"></div>
+            <div class="interaction" id="interaction">
+                <div class="king5"></div>
+                <div id="musicNote">
+                </div>
+                <div class="light"></div> 
+                <div class="girl4"></div>
+                <div class="breakBar" id="breakBar"></div>
+                <div class="breakBar2" id="breakBar2"></div>
+                <div class="king6" id="king7"></div>
+                <div class="container" id="lightContainer" >
+                    <div class="light2" id="light2">
+                    </div>
+                </div> 
+            </div>
+            <div class="girlScene05" data--2300-top-top="display:none;opacity:0" data--2500-top-top="display:block;opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="girl5" data--2500-top-top="display:none;opacity:0" data--2600-top-top="display:block" data--2800-top-top="display:block;opacity:1" data--2900-top-top="opacity:0" data-anchor-target="#slide-2"></div>
+            <div class="girl6" data--2800-top-top="display:none;opacity:0" data--2900-top-top="display:block" data--3000-top-top="display:block;opacity:1" data--3500-top-top="opacity:0" data-anchor-target="#slide-2"></div>
+            <div class="musicNote2" data--2900-top-top="display:none;opacity:0" data--3000-top-top="display:block" data--3100-top-top="display:block;opacity:1" data--3500-top-top="opacity:0" data-anchor-target="#slide-2"></div>
+            <div class="bear" id="bear" data--3500-top-top="display:none;opacity:0" data--3600-top-top="display:block" data--3700-top-top="display:block;opacity:1" data-anchor-target="#slide-2"></div>
+            <div class="girl7" data--3500-top-top="display:none;opacity:0" data--3600-top-top="display:block" data--3700-top-top="opacity:1;left:30%;bottom:0;background-size:100%;" data--4000-top-top="bottom:-20%;background-size:120%;" data-anchor-target="#slide-2"></div>
+            <div class="interaction2 small" id="interaction2">
+                <div class="plus" id="plus"></div>
+                <div class="minus" id="minus" ></div>
+            </div>
+            <div class="girlBar"></div>
+            
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
+    <script src="/static/skrollr.min.js"></script>
+    <script src="/static/animation.js"></script>
+    <script src="/static/homepage.js"></script>
+    <script src="/static/jquery-sakura.min.js"></script>
+    <script>
+        
+    </script>
+    <script>
+            function displaypicture() {
+                $(".picture1").css("display", "none");
+                $(".picture2").css("display", "block");
+                $("#musicNotes").addClass("noteMoving");
+                $("#clickUI").css("opacity", "0");
+                setTimeout(function () {
+                    $(".picture1").css("display", "block");
+                    $(".picture2").css("display", "none");
+                    $("#musicNotes").removeClass("noteMoving");
+                }, 2000);
+                
+            };
+            function showpicture1() {
+                $("#original").css("display", "none");
+                $("#up").css("display", "block");
+                $("#mid").css("display", "none");
+                $("#down").css("display", "none");
+            }
+            function showpicture2() {
+                $("#original").css("display", "none");
+                $("#up").css("display", "none");
+                $("#mid").css("display", "block");
+                $("#down").css("display", "none");
+            }
+            function showpicture3() {
+                $("#original").css("display", "none");
+                $("#up").css("display", "none");
+                $("#mid").css("display", "none");
+                $("#mid").css("display", "none");
+                $("#down").css("display", "block");
+            }
+            function initial() {
+                $("#original").css("display", "block");
+                $("#up").css("display", "none");
+                $("#mid").css("display", "none");
+                $("#down").css("display", "none");
+            }
+    </script>
+    <script>
+
+            $(window).load(function () {
+                $('body').sakura({
+
+                    className: 'sakura', // Class name to use
+
+                    fallSpeed: 1.5, // Factor for petal fall speed
+
+                    maxSize: 18, // Maximum petal size
+
+                    minSize: 15, // Minimum petal size
+
+                    newOn: 380, // Interval after which a new petal is added
+
+                });
+            });
+
+
+    </script>
+    <script>
+            function addanimation() {
+                $(".content2").addClass("content2animation");
+                setTimeout(function () {
+                    $(".content2").removeClass("content2animation");
+                }, 1000);
+
+                $(".content1").addClass("content1animation");
+                setTimeout(function () {
+                    $(".content1").removeClass("content1animation");
+                }, 1000);
+
+                setTimeout(function () {
+                    $("#adding").addClass("arrow");
+                }, 1000);
+
+            };
+    </script>
+    <!--<script>
+        document.getElementById("dragPicture").innerHTML = $(document).scrollTop();
+    </script>-->
+</body>
+</html>
+
