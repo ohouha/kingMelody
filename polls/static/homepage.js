@@ -196,7 +196,7 @@
 
         nodes.className = "noteAni";
         nodes.setAttribute('id', 'musicFall');
-        nodes.setAttribute('src', 'InteractionDesign01Scene05/Music-Note-Animation-02.gif');
+        nodes.setAttribute('src', '/static/InteractionDesign01Scene05/Music-Note-Animation-02.gif');
         var ele = document.getElementById("musicNote");
         ele.appendChild(nodes);
         }
